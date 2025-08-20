@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: 
+        linear-gradient(rgba(45, 123, 153, 0.6), rgba(32, 70, 102, 0.6)),
+        url("") no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+    
+    background-position: sticky; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #800000; 
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+img{
+  width: 70px;
+  height: 70px;
+}
+header li{
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+}
+header li:hover{
+  color: #FFD700;
+  transform: translateY(-2px);
+  transform: translateX(-2px);
+  font-size: 1.2rem;
+  font-family: 'Montserrat';
+  
+}
+
+.news-section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+      background: 
+        linear-gradient(rgba(32, 81, 100, 0.6), rgba(28, 70, 104, 0.6)),
+        url("") no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-position: sticky; 
+    border-radius: 20px;
+    }
+
+    .news-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #004080;
+    }
+
+    .news-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .news-card {
+      background: rgb(14, 42, 51);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(46, 178, 255, 0.945);
+      
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+      transform: translateY(5px);
+    }
+
+    .news-card h3 {
+      color: #000000;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .news-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .news-date {
+      font-size: 1rem;
+      color: rgb(14, 151, 2);
+    }
+
+#logo{
+    width: 150px;
+    height: 150px;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Playfair Display';
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: none;
+   color: aqua;
+}
+
+
+
+
+
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+ .menu-toggle {
+      background: #800000;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      text-align: center;
+      position: fixed;
+      top: 110px;
+      right: 0px;
+      border-radius: 5px;
+      z-index: 1000;
+      font-size: 1.5rem;
+    }
+
+    /* The hidden menu */
+    .menu {
+      display: none;
+      flex-direction: column;
+      background: #800000;
+      position: fixed;
+      top: 170px; /* just below the button */
+      right: 0px;
+      width: 100px;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .menu a {
+      color: white;
+      padding: 12px;
+      text-decoration: none;
+      text-align: center;
+      border-bottom: 1px solid #555;
+    }
+
+    .menu a:hover {
+      background: #881111;
+    }
+
+
+
+#footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #800000;
+  color: white;
+  gap: 7rem;
+  height: 50px;
+}
+#footer ul{
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  text-align: center;
+  margin-top: 100px;
+  
+}
+
+#first{
+    margin-top: 400px;
+}
+#footer #first{
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  text-align: center;
+  margin-top: 200px;
+  
+}
+
+#footer a{
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  font-weight: bold;
+}
+#footer a:hover{
+  text-decoration: none;
+   color: aqua;
+}
+#motto{
+  height: 25px;
+  margin-top: 0;
+  background-color: #800000;
+  color: white;
+  font-family: 'Playfair Display';
+  font-size: 2rem;
+  font-style: italic;
+  text-align: top;
+
+}
+#motto p{
+  margin-top: 0;
+}
+footer {
+  background: #333;
+  color: white;
+  font-family: 'Playfair Display';
+  font-size: 1.5rem;
+  padding: 1rem;
+  height: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
