@@ -16,13 +16,13 @@ header {
   overflow-x: hidden;
   background: #800000; 
   color: white;
-  position: sticky;
+  
   top: 0;
   z-index: 1000;
 }
 img{
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
 }
 header li{
   font-family: 'Montserrat';
@@ -60,15 +60,14 @@ header li:hover{
 }
 #home h2{
   font-family: 'Playfair Display';
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
   
 }
 #logo{
-    width: 150px;
-    height: 150px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    
     
 }
 header .logo {
@@ -112,12 +111,12 @@ section {
       padding: 10px 15px;
       cursor: pointer;
       text-align: center;
-      position: fixed;
-      top: 150px;
+      
+      top: 160px;
       right: 0px;
       border-radius: 5px;
       z-index: 1000;
-      font-size: 1.5rem;
+      font-size: 3rem;
     }
 
     /* The hidden menu */
@@ -126,12 +125,12 @@ section {
       flex-direction: column;
       background: #800000;
       position: fixed;
-      top: 170px; /* just below the button */
+      top: 230px; /* just below the button */
       right: 25px;
       width: 100px;
       border-radius: 5px;
       overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px rgba(118, 206, 218, 0.952);
     }
 
     .menu a {
@@ -142,8 +141,10 @@ section {
       border-bottom: 1px solid #555;
     }
 
+
     .menu a:hover {
       background: #881111;
+      transform: scale(1.2);
     }
 
 #first li:hover{
