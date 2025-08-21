@@ -11,18 +11,27 @@ body {
     background-position: sticky; 
     border-radius: 20px;
 }
+#first li:hover{
+  transform: scale(1.5);
+}
 #href{
     font-family: 'Playfair Display';
+    
     
 }
 #href a{
     text-decoration: none;
+    color: rgba(4, 49, 4, 0.938);
 }
-header {
-  display: flex;
+#href a:hover{
+    transform: scale(1.5);
+}
+header {  
+  display: flex;    
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background: #800000; /* maroon theme */
+  background: #800000; 
   color: white;
   padding: 1rem 2rem;
   position: sticky;
@@ -49,12 +58,15 @@ header li:hover{
 #logo{
     width: 150px;
     height: 150px;
+    display: flex;
+    flex-wrap: wrap;
 }
 header .logo {
   font-size: 1.5rem;
   font-weight: bold;
   font-family: 'Playfair Display';
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -91,7 +103,7 @@ section {
       cursor: pointer;
       text-align: center;
       position: fixed;
-      top: 110px;
+      top: auto;
       right: 0px;
       border-radius: 5px;
       z-index: 1000;
@@ -104,8 +116,8 @@ section {
       flex-direction: column;
       background: #800000;
       position: fixed;
-      top: 170px; /* just below the button */
-      right: 0px;
+      top: auto; /* just below the button */
+      right: 25px;
       width: 100px;
       border-radius: 5px;
       overflow: hidden;
@@ -123,9 +135,8 @@ section {
     .menu a:hover {
       background: #881111;
     }
-#first{
-    margin-top: 400px;
-}
+
+
 
 #footer{
   display: flex;
@@ -144,14 +155,26 @@ section {
   margin-top: 100px;
   
 }
+
+#first{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#first li:hover{
+  transform: scale(1.5);
+}
 #footer #first{
   text-decoration: none;
   color: white;
   list-style: none;
   text-align: center;
   margin-top: 200px;
+  display: flex;
+    flex-wrap: wrap;
   
 }
+
 #footer a{
   text-decoration: none;
   color: white;
@@ -163,18 +186,22 @@ section {
    color: aqua;
 }
 #motto{
-  height: 25px;
+  height: 100px;
   margin-top: 0;
   background-color: #800000;
   color: white;
   font-family: 'Playfair Display';
   font-size: 2rem;
   font-style: italic;
-  text-align: top;
+  text-align: center;
+
 }
 #motto p{
   margin-top: 0;
+  
 }
+
+
 form {
   max-width: 500px;
   margin: auto;
@@ -207,10 +234,11 @@ footer {
   background: #333;
   color: white;
   font-family: 'Playfair Display';
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem;
-  height: 4px;
+  height: 50px;
   display: flex;
+  margin-top: 10px;
   justify-content: center;
   align-items: center;
 }

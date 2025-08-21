@@ -10,8 +10,9 @@ body {
     background-position: sticky; 
 }
 
-header {
-  display: flex;
+header {  
+  display: flex;    
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background: #800000; 
@@ -60,6 +61,7 @@ header li:hover{
 
     .news-container {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 2rem;
@@ -74,8 +76,8 @@ header li:hover{
     }
 
     .news-card:hover {
-      transform: translateY(-5px);
-      transform: translateY(5px);
+      transform: scale(1.2);
+      
     }
 
     .news-card h3 {
@@ -98,12 +100,15 @@ header li:hover{
 #logo{
     width: 150px;
     height: 150px;
+    display: flex;
+    flex-wrap: wrap;
 }
 header .logo {
   font-size: 1.5rem;
   font-weight: bold;
   font-family: 'Playfair Display';
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -133,14 +138,14 @@ section {
   text-align: center;
 }
 
- .menu-toggle {
+.menu-toggle {
       background: #800000;
       color: white;
       padding: 10px 15px;
       cursor: pointer;
       text-align: center;
       position: fixed;
-      top: 110px;
+      top: auto;
       right: 0px;
       border-radius: 5px;
       z-index: 1000;
@@ -153,8 +158,8 @@ section {
       flex-direction: column;
       background: #800000;
       position: fixed;
-      top: 170px; /* just below the button */
-      right: 0px;
+      top: auto; /* just below the button */
+      right: 25px;
       width: 100px;
       border-radius: 5px;
       overflow: hidden;
@@ -194,7 +199,9 @@ section {
 }
 
 #first{
-    margin-top: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 #footer #first{
   text-decoration: none;
@@ -202,9 +209,13 @@ section {
   list-style: none;
   text-align: center;
   margin-top: 200px;
+  display: flex;
+    flex-wrap: wrap;
   
 }
-
+#first li:hover{
+  transform: scale(1.5);
+}
 #footer a{
   text-decoration: none;
   color: white;
@@ -216,27 +227,29 @@ section {
    color: aqua;
 }
 #motto{
-  height: 25px;
+  height: 100px;
   margin-top: 0;
   background-color: #800000;
   color: white;
   font-family: 'Playfair Display';
   font-size: 2rem;
   font-style: italic;
-  text-align: top;
+  text-align: center;
 
 }
 #motto p{
   margin-top: 0;
+  
 }
 footer {
   background: #333;
   color: white;
   font-family: 'Playfair Display';
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem;
-  height: 4px;
+  height: 50px;
   display: flex;
+  margin-top: 10px;
   justify-content: center;
   align-items: center;
 }
