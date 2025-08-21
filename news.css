@@ -6,7 +6,7 @@ body {
         linear-gradient(rgba(45, 123, 153, 0.6), rgba(32, 70, 102, 0.6)),
         url("") no-repeat center center/cover;
     color: rgb(0, 0, 0);
-    
+     overflow-x: hidden;
     background-position: sticky; 
 }
 
