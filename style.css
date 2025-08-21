@@ -5,14 +5,16 @@ body {
   background-color: #F9F9F9;
   color: #333333;
 }
+
 header {  
   display: flex;    
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background: #800000; 
+  width: 100%;
   color: white;
-  padding: 1rem 2rem;
+  
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -24,11 +26,13 @@ img{
 header li{
   font-family: 'Montserrat';
   font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 header li:hover{
   color: #FFD700;
-  transform: translateY(-2px);
-  transform: translateX(-2px);
+  
+  transform: scale(1.2);
   font-size: 1.2rem;
   font-family: 'Montserrat';
   
