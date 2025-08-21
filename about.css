@@ -13,8 +13,6 @@ header {
   align-items: center;
   background: #800000; 
   color: white;
-  
-  position: sticky;
   top: 0;
   z-index: 1000;
 }

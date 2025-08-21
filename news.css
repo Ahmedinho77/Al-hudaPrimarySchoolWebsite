@@ -17,7 +17,7 @@ header {
   align-items: center;
   background: #800000; 
   color: white;
-  
+   width: 100%;
   position: sticky;
   top: 0;
   z-index: 1000;
