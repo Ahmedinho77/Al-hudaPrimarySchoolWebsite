@@ -136,14 +136,14 @@ section {
   text-align: center;
 }
 
-.menu-toggle {
+ .menu-toggle {
       background: #800000;
       color: white;
       padding: 10px 15px;
       cursor: pointer;
       text-align: center;
       
-      overflow-x: hidden;
+
       top: 160px;
       right: 0px;
       border-radius: 5px;
@@ -156,9 +156,9 @@ section {
       display: none;
       flex-direction: column;
       background: #800000;
-      position: fixed;
-      top: 230px; /* just below the button */
-      right: 25px;
+      
+      top: 200px; /* just below the button */
+      right: 0;
       width: 100px;
       border-radius: 5px;
       overflow: hidden;

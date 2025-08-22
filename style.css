@@ -12,6 +12,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  
   width: 100%;
   overflow-x: hidden;
   background: #800000; 
@@ -112,11 +113,27 @@ section {
       cursor: pointer;
       text-align: center;
       
-      top: 160px;
+      top: 150px;
       right: 0px;
       border-radius: 5px;
       z-index: 1000;
-      font-size: 3rem;
+      font-size: 2.5rem;
+    }
+
+    /* The hidden menu */
+   .menu-toggle {
+      background: #800000;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      text-align: center;
+      
+
+      top: 90px;
+      right: 0px;
+      border-radius: 5px;
+      z-index: 1000;
+      font-size: 2.5rem;
     }
 
     /* The hidden menu */
@@ -124,9 +141,9 @@ section {
       display: none;
       flex-direction: column;
       background: #800000;
-      position: fixed;
+      
       top: 230px; /* just below the button */
-      right: 25px;
+      right: 0;
       width: 100px;
       border-radius: 5px;
       overflow: hidden;
@@ -141,11 +158,11 @@ section {
       border-bottom: 1px solid #555;
     }
 
-
     .menu a:hover {
       background: #881111;
       transform: scale(1.2);
     }
+
 
 #first li:hover{
   transform: scale(1.5);
