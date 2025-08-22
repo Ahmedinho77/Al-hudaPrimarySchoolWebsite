@@ -6,30 +6,36 @@
         menu.style.display = "flex";
       }
     }
+const form = document.getElementById("contactForm");
+const successMsg = document.getElementById("successMsg");
 
-     document.getElementById("contactForm").addEventListener("submit", function(e){
-    e.preventDefault(); // Prevent form refresh
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
 
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let message = document.getElementById("message").value.trim();
-    let successMsg = document.getElementById("successMsg");
+  const formData = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value
+  };
 
-    if(name === "" || email === "" || message === ""){
-      alert("⚠️ Please fill in all fields.");
-      return;
+  try {
+    const response = await fetch("https://formspree.io/f/mpwlvdzz", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify(formData)
+    });
+
+    if (response.ok) {
+      successMsg.style.display = "block";
+      form.reset();
+    } else {
+      const errorData = await response.json();
+      alert("Error: " + (errorData.error || "Something went wrong"));
     }
-
-    
-    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    if(!email.match(emailPattern)){
-      alert("⚠️ Please enter a valid email address.");
-      return;
-    }
-
-    
-    successMsg.style.display = "block";
-
-    
-    document.getElementById("contactForm").reset();
-  });
+  } catch (err) {
+    alert("Network error: " + err.message);
+  }
+});
